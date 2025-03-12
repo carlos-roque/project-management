@@ -1,0 +1,29 @@
+[
+    {
+        "ID": 1,
+        "Text": "MC",
+        "WeekNum": 3,
+        "WeekPos": 3,
+        "Date": "01\/16\/2025",
+        "Color": "#007BFF",
+        "TextColor": "#FFFFFF"
+    },
+    {
+        "ID": 2,
+        "Text": "PV",
+        "WeekNum": 26,
+        "WeekPos": 20,
+        "Date": "05\/15\/2025",
+        "Color": "#008000",
+        "TextColor": "#FFFFFF"
+    },
+    {
+        "ID": 3,
+        "Text": "FC",
+        "WeekNum": 38,
+        "WeekPos": 45,
+        "Date": "11\/07\/2025",
+        "Color": "#FFDD57",
+        "TextColor": "#000000"
+    }
+]

@@ -143,9 +143,11 @@ class ProjectResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+        
             ->columns([
                 Tables\Columns\TextColumn::make('cover')
                     ->label(__('Cover image'))
+                    
                     ->formatStateUsing(fn($state) => new HtmlString('
                             <div style=\'background-image: url("' . $state . '")\'
                                  class="w-8 h-8 bg-cover bg-center bg-no-repeat"></div>
@@ -193,6 +195,8 @@ class ProjectResource extends Resource
                     ->sortable()
                     ->searchable(),
             ])
+            //->tableWrapperClass('custom-narrow-table')
+            
             ->filters([
                 Tables\Filters\SelectFilter::make('owner_id')
                     ->label(__('Owner'))
@@ -260,7 +264,11 @@ class ProjectResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
-            ]);
+            ])
+            
+            ;
+
+            
     }
 
     public static function getRelations(): array
