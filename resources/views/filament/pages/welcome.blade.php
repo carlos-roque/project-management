@@ -1,4 +1,4 @@
-<x-filament::page>
+<x-layout>
     <x-slot:heading>
         Home Page
     </x-slot:heading>
@@ -484,4 +484,4 @@
             closeDialogButton.addEventListener('click', hideDialog);
         });
     </script>
-</x-filament::page>
+</x-layout>
